@@ -1,3 +1,93 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1B1B1B;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1B1B1B;
+}
+
 img {
   border-radius: 28px;
+}
+
+/* main page */
+
+#page {
+  max-width: 1120px;
+  max-height: 3054px;
+  width: 1120px;
+  height: 3054px;
+  margin: auto;
+}
+
+p {
+  color: #333333;
+}
+
+/* meetbusan */
+
+#meetbusan p:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #E1624F;
+  
+}
+
+#discover p:first-child {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #E1624F;
+}
+
+#meetbusan img + p {
+  text-align: center;
+  font-style: italic;
+}
+
+#meetbusan, #discover {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+/* travel ideas list */
+
+.travel-ideas {
+  list-style: inside;
+  font-weight: bold;
+  color: #0C51A7;
+}
+
+.travel-ideas:nth-child(2) {
+  color: #E5245E;
+}
+
+.travel-ideas:nth-child(3) {
+  color: #E95E10;
+}
+
+ol {
+  margin:
+}
+
+ol img + li {
+  font-weight: bold;
+  font-size: 28px;
+  color: #1B1B1B;
+}
+
+.final {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
