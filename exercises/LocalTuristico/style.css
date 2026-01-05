@@ -1,3 +1,7 @@
+* {
+  background-color: #F5F4F0;
+}
+
 :root {
   font-family: "Open Sans", sans-serif;
 }
@@ -6,12 +10,28 @@ h1 {
   font-size: 36px;
   font-weight: 700;
   color: #1B1B1B;
+  margin-top: 16px;
+  margin-bottom: 40px;
 }
 
 h2 {
+  margin-top: 0px;
+  margin-bottom: 8px;
   font-size: 32px;
   font-weight: 700;
   color: #1B1B1B;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #1B1B1B;
+}
+
+h3 + p {
+  margin-top: 4px;
 }
 
 img {
@@ -22,10 +42,10 @@ img {
 
 #page {
   max-width: 1120px;
-  max-height: 3054px;
+  max-height: 3054px; 
   width: 1120px;
   height: 3054px;
-  margin: auto;
+  margin: 88px auto;
 }
 
 p {
@@ -42,52 +62,68 @@ p {
   
 }
 
+#discover {
+  margin-top: 64px;
+}
+
 #discover p:first-child {
+  margin-bottom: 0px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   color: #E1624F;
 }
 
+#discover h2 + p {
+  margin-top: 0px;
+  margin-bottom: 64px;
+}
+
 #meetbusan img + p {
+  margin-top: 24px;
+  margin-bottom: 40px;
   text-align: center;
   font-style: italic;
 }
 
 #meetbusan, #discover {
   border-bottom: 1px solid #D9D9D9;
+  
 }
 
 /* travel ideas list */
 
 .travel-ideas {
+  margin-top: -16px;
+  margin-left: -36px;
   list-style: inside;
   font-weight: bold;
   color: #0C51A7;
 }
 
 .travel-ideas:nth-child(2) {
+  margin-top: 0px;
   color: #E5245E;
 }
 
 .travel-ideas:nth-child(3) {
+  margin-top: 0px;
+  margin-bottom: 40px;
   color: #E95E10;
 }
 
-ol {
-  margin:
-}
-
-ol img + li {
-  font-weight: bold;
-  font-size: 28px;
-  color: #1B1B1B;
-}
-
 .final {
+  margin-top: 40px;
   text-align: center;
 }
 
 footer {
+  font-weight: bold;
+  margin-top: -65px;
   text-align: center;
+}
+
+#heart {
+  color: red;
+  margin-top: auto;
 }
