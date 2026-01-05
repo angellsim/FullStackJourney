@@ -1,3 +1,10 @@
+:root {
+  font-family: "Alice", serif;
+  color: #573A37;
+  line-height: 150%;
+  font-size: 16px;
+}
+
 /* body */
 
 body {
@@ -18,4 +25,17 @@ body img {
   width: 800px;
   margin: 48px auto;
   box-sizing: border-box;
+}
+
+h1 {
+  line-height: 140%;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1, h2 {
+  color: #291B1A;
 }
