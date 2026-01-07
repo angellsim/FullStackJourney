@@ -1,0 +1,20 @@
+#black {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+}
+
+section {
+  border: 2px solid black;
+  position: relative;
+}
+
+#red {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
