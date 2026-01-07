@@ -4,8 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ex007</title>
+  <style>
+    #container {
+      border: 2px dashed black;
+    }
+
+    #item {
+      --hue: 0;
+      border: 2px solid red;
+      background-color: hsl(var(--hue), 100%, 70%);
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  
+  <div id="container">
+    <div id="item" style="--hue:0">1</div>
+    <div id="item" style="--hue:100">2</div>
+    <div id="item" style="--hue:200">3</div>
+    <div id="item" style="--hue:300">4</div>
+  </div>
 </body>
 </html>
