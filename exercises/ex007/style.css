@@ -1,4 +1,21 @@
 #container {
+  height: 50vh;
   display: flex;
-  height: 40vh;
+  flex-direction: column; 
+  /* justify-content: center; */
+  align-items: stretch;
+  /* align-content: space-evenly; */
+  /* gap: 2rem; */
+  /* flex-wrap: wrap; */
+}
+
+#item {
+  flex-grow: 1;
+  /* flex-basis: 600px; */
+  /* flex-shrink: 2; */
+}
+
+#item:nth-child(6) {
+  /* flex-grow: 3; */
+  /* flex-shrink: 1; */
 }

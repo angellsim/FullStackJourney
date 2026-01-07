@@ -11,7 +11,6 @@
     }
 
     #item {
-      width: 20px;
       --hue: 0;
       border: 2px solid red;
       background-color: hsl(var(--hue), 100%, 70%);
@@ -21,10 +20,14 @@
 </head>
 <body>
   <div id="container">
-    <div id="item" style="--hue:0">1</div>
+    <div id="item" style="--hue:0;">1</div>
     <div id="item" style="--hue:100">2</div>
     <div id="item" style="--hue:200">3</div>
     <div id="item" style="--hue:300">4</div>
+    <div id="item" style="--hue:0;">5</div>
+    <div id="item" style="--hue:100">6</div>
+    <div id="item" style="--hue:200">7</div>
+    <div id="item" style="--hue:300">8</div>
   </div>
 </body>
 </html>
