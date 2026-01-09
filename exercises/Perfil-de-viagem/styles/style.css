@@ -1,1 +1,6 @@
 @import url(global.css);
+
+body {
+  font: var(--text-lg);
+  color: red;
+}
