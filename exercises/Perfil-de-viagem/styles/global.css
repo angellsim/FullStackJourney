@@ -40,3 +40,7 @@ nav a:hover {
   text-decoration: underline;
   color: var(--brand-color);
 }
+
+.container {
+  padding-inline: 32px;
+}
