@@ -24,3 +24,19 @@
   --text-sm: 12px/170% var(--font-family);
 
 }
+
+body {
+  font: var(--text);
+  color: var(--text-color-secondary);
+  background-color: var(--bg-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
