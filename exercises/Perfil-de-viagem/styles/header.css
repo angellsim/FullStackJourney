@@ -1,4 +1,6 @@
 header {
+  max-width: 1280px;
+  margin-inline: auto;
   padding-block: 32px;
 }
 
