@@ -5,10 +5,15 @@
   height: 100vh;
 }
 
-div {
+#pai > * {
   border: 1px solid red;
 }
 
-span {
-  border: 1px solid red;
+header {
+  grid-row: 1/4;
+}
+
+main {
+  grid-column: 2/4;
+  grid-row: 1/3;
 }
