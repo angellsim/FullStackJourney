@@ -1,0 +1,14 @@
+#pai {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+div {
+  border: 1px solid red;
+}
+
+span {
+  border: 1px solid red;
+}
