@@ -1,0 +1,5 @@
+@import url(global.css);
+
+div {
+  font: var(--text-span);
+}

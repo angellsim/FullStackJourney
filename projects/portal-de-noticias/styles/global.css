@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* product color */
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D43D8;
+
+  /* base color */
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+
+  /* text color */
+  --text-color-primary: #F1F5F9;
+  --text-color-secondary: #CBD5E1;
+
+  /* text settings */
+  --font-family: "Archivo", sans-serif;
+  --text-lg: bolder 24px/135% var(--font-family);
+  --text-md: bolder 16px/140% var(--font-family);
+  --text-sm: bolder 14px/140% var(--font-family);
+  --text-span: bold 14px/145% var(--font-family);
+  --text-paragraph: 14px/145% var(--font-family);
+}
+
+body {
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
+}
