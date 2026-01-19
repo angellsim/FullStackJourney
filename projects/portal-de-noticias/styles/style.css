@@ -1,5 +1,3 @@
 @import url(global.css);
+@import url(header.css);
 
-div {
-  font: var(--text-span);
-}
