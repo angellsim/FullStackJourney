@@ -45,10 +45,10 @@ h1, h2, h3 {
   font: inherit; /* inherit HERDA do pai */
 }
 
-.grid {
-  display: grid;
+img {
+  max-width: 100%;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
+main {
+  margin-top: 40px;
 }
