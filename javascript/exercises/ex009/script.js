@@ -17,3 +17,15 @@ let numeroString = "10"
 let soma = numeroString + 9
 
 console.log(soma) // Resultado = 109
+
+// Estritamente igual e estritamente diferente
+
+let one = 1
+let two = 2
+
+console.log(one == "1") // Resultado = true (valor igual)
+console.log(one === "1") // Resultado = false (valor e tipo são diferentes)
+console.log(1 === "1") // Resultado = false (valor e tipo são diferentes)
+console.log(1 === 1) // Resultado = true (valor e tipo são estritamente iguais)
+console.log(two != "2") // Resultado = false (valor igual)
+console.log(two !== "2") // Resultado = true (valor e tipo são diferentes)
