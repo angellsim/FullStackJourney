@@ -4,11 +4,13 @@
 */
 
 function sum(a, b) {
-  console.log(a + b)
+  return a + b
 }
 
-sum(5, 7)
-sum(8, 3)
+let result1 = sum(5, 7)
+let result2 = sum(8, 3)
+
+console.log(result1, result2)
 
 function joinText(text1 = "", text2 = "", text3 = ""){
   console.log(text1, text2, text3)
