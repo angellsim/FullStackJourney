@@ -1,3 +1,8 @@
+/*
+    - Parâmetros: é uma variável que irá receber valores quando a função for chamada.
+    - Argumentos: são os valores que são passados para os parâmetros.
+*/
+
 function sum(a, b) {
   console.log(a + b)
 }
