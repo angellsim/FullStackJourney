@@ -1,9 +1,18 @@
-const scroll = document.querySelector('ul')
+const ul = document.querySelector('ul')
 
-scroll.addEventListener("scroll", () => {
-  console.log(scroll.scrollTop)
-
+ul.addEventListener("scroll", () => {
   if (ul.scrollTop > 300){
-    console.log("FIM DA LISTA")
-  }
+    // console.log("FIM DA LISTA")
+
+    ul.scrollTo({
+      top: 0,
+    })
+  } 
+
+})
+
+button = document.querySelector('button')
+button.addEventListener("click", (event) => {
+  event.preventDefault()
+  console.log("CLICOU")
 })
