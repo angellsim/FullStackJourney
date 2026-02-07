@@ -1,6 +1,7 @@
 const form = document.querySelector("form")
 const amount = document.getElementById("amount")
 const currency = document.getElementById("currency")
+const footer = document.querySelector("main footer")
 
 const USD = "5.25"
 const EUR = "5.00"
@@ -31,5 +32,11 @@ form.onsubmit = (event) => {
 
 function convertCurrency(amount, price, currency) {
 
-  console.log(amount / price)
+  try { 
+    footer.classList.add("show-result") 
+  } catch(error) {
+    footer.classList.remove("show-result")
+    alert("Ocorreu um erro. Por favor, tente novamente.")
+    console.log(error)
+  }
 }
