@@ -1,0 +1,10 @@
+main {
+  display: grid;
+  justify-content: center;
+}
+
+a {
+  margin-top: 62px;
+  text-decoration: none;
+  
+}
