@@ -4,6 +4,7 @@ const amount = document.getElementById("amount")
 const currency = document.getElementById("currency")
 const footer = document.querySelector("main footer")
 const description = document.getElementById("description")
+const result = document.getElementById("result")
 
 // Valores das moedas em relação ao Real
 const USD = "5.25"
@@ -43,6 +44,11 @@ function convertCurrency(amount, price, currency) {
   try { 
     // Formatação do texto para o tipo selecionado
     description.textContent = `${currency} 1 = ${formatCurrencyBRL(price)}`
+
+    let total = amount * price
+
+    // Exibe o resultado total
+    result.textContent = total
 
     // Fazer a caixa de texto aparecer no site
     footer.classList.add("show-result") 
