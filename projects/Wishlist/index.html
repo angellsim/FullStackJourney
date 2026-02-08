@@ -17,20 +17,27 @@
   </header>
 
   <main>
-    <a href="#"><- Voltar</a>
+
+    <a href="#"><ion-icon name="arrow-back-outline"></ion-icon> Voltar</a>
     <h2>Compras da semana</h2>
-    <input type="text" placeholder="Adicione um novo item">
-    <button>Adicionar item</button>
+    <div class="submit">
+      <input type="text" placeholder="Adicione um novo item">
+      <button>Adicionar item</button>
+    </div>
     <ul>
-      <input type="checkbox"> <li>Pão de forma</li>
-      <input type="checkbox"> <li>Café preto</li>
-      <input type="checkbox"> <li>Suco de laranja</li>
-      <input type="checkbox"> <li>Bolacha</li>
+      <div class="teste"><input type="checkbox"> <li>Pão de forma</li></div>
+      <div class="teste"><input type="checkbox"> <li>Café preto</li></div>
+      <div class="teste"><input type="checkbox"> <li>Suco de laranja</li></div>
+      <div class="teste"><input type="checkbox"> <li>Bolacha</li></div>
     </ul>
 
-    <p><img src="assets/icons/warning-circle-filled.svg" alt="Exclamação de aviso">O item foi removido da lista</p>
+    <span id="alert">
+      <p><img src="assets/icons/warning-circle-filled.svg" alt="Exclamação de aviso">O item foi removido da lista</p>
+    </span>
   </main>
 
   <script src="scripts/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

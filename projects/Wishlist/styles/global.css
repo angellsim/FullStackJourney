@@ -39,11 +39,6 @@ h1 {
   color: var(--content-secondary);
 }
 
-h2 {
-  font: var(--text-lg);
-  color: var(--content-primary);
-}
-
 body {
   font: var(--text);
   background-color: var(--bg-primary);
