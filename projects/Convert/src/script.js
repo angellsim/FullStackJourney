@@ -45,10 +45,19 @@ function convertCurrency(amount, price, currency) {
     // Formatação do texto para o tipo selecionado
     description.textContent = `${currency} 1 = ${formatCurrencyBRL(price)}`
 
+    // Calcula o total
     let total = amount * price
 
+    // Verifica se o valor total é um número, caso contrário, exibe uma mensagem de alerta para o usuário
+    if (isNaN(total)) {
+      return alert("Por favor, digite o valor corretamente.")
+    }
+
+    // Formata o valor total para o formato da moeda brasileira
+    total = formatCurrencyBRL(total).replace("R$", "")
+
     // Exibe o resultado total
-    result.textContent = total
+    result.textContent = `${total} reais`
 
     // Fazer a caixa de texto aparecer no site
     footer.classList.add("show-result") 
