@@ -42,7 +42,7 @@ function convertCurrency(amount, price, currency) {
 
   try { 
     // Formatação do texto para o tipo selecionado
-    description.textContent = `${currency} 1 = ${price}`
+    description.textContent = `${currency} 1 = ${formatCurrencyBRL(price)}`
 
     // Fazer a caixa de texto aparecer no site
     footer.classList.add("show-result") 
@@ -52,4 +52,12 @@ function convertCurrency(amount, price, currency) {
     alert("Ocorreu um erro. Por favor, tente novamente.")
     console.log(error)
   }
+}
+
+// Formata a moeda em Real brasileiro
+function formatCurrencyBRL(value) {
+  return Number(value).toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  })
 }
