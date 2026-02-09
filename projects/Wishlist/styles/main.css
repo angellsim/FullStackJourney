@@ -1,7 +1,11 @@
+/* Corpo Principal MAIN */ 
+
 main {
   display: grid;
   justify-content: center;
 }
+
+/* Link do topo VOLTAR */
 
 a {
   margin-top: 62px;
@@ -9,6 +13,16 @@ a {
   color: var(--color-brand);
   font: var(--text-link);
 }
+
+/* Título do formulário */
+
+h2 {
+  margin-top: 16px;
+  font: var(--text-lg);
+  color: var(--content-primary);
+}
+
+/* Checklist dos itens da lista */
 
 .checkbox-list {
   display: flex;
@@ -19,7 +33,6 @@ a {
   margin-right: 12px;
 }
 
-
 ul li {
   margin-left: 12px;
 }
@@ -28,19 +41,6 @@ li {
   font-family: var(--font-family);
   color: var(--content-secondary);
   list-style: none;
-}
-
-h2 {
-  margin-top: 16px;
-  font: var(--text-lg);
-  color: var(--content-primary);
-}
-
-.submit {
-  display: flex;
-  gap: 16px;
-  margin-top: 44px;
-  margin-bottom: 40px;
 }
 
 /* Aba de alerta INICIO */
