@@ -10,11 +10,23 @@ a {
   font: var(--text-link);
 }
 
-.teste {
+.checkbox-list {
   display: flex;
 }
 
+.checkbox-list > img {
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+
+ul li {
+  margin-left: 12px;
+}
+
 li {
+  font-family: var(--font-family);
+  color: var(--content-secondary);
   list-style: none;
 }
 
@@ -31,6 +43,34 @@ h2 {
   margin-bottom: 40px;
 }
 
+/* Aba de alerta INICIO */
+
 #alert {
+  font-family: var(--font-family);
+  background-color: var(--color-danger);
+  color: var(--always-white);
   margin-top: 36px;
+  padding: 12px 0;
+  border-radius: 12px;
+}
+
+#alert > p {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Aba de alerta FIM */
+
+input {
+  border-radius: 12px;
+  width: 451px;
+  height: 44px;
+  text-indent: 18px;
+}
+
+#add-item {
+  width: 160px;
+  height: 44px;
+  border-radius: 12px;
 }
