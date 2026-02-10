@@ -1,4 +1,4 @@
-/* Corpo Principal MAIN */ 
+/* Corpo Principal MAIN */
 
 main {
   display: grid;
@@ -24,23 +24,37 @@ h2 {
 
 /* Checklist dos itens da lista */
 
+ul {
+  width: 100%;
+  list-style: none;
+}
+
 .checkbox-list {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  width: 100%;
 }
 
-.checkbox-list > img {
+.checkbox-list button {
   margin-left: auto;
-  margin-right: 12px;
+  /* Pushes button to the right */
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-ul li {
-  margin-left: 12px;
-}
-
-li {
+.checkbox-list span {
   font-family: var(--font-family);
   color: var(--content-secondary);
-  list-style: none;
+}
+
+/* Checkbox specific styles if needed, or let them utilize browser defaults but reset potential conflicts */
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 /* Aba de alerta INICIO */
@@ -54,7 +68,7 @@ li {
   border-radius: 12px;
 }
 
-#alert > p {
+#alert>p {
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -62,15 +76,33 @@ li {
 
 /* Aba de alerta FIM */
 
-input {
+input[type="text"] {
   border-radius: 12px;
-  width: 451px;
+  width: 100%;
+  max-width: 451px;
   height: 44px;
   text-indent: 18px;
+  border: 1px solid var(--border-primary);
+}
+
+.submit {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
 }
 
 #add-item {
   width: 160px;
   height: 44px;
   border-radius: 12px;
+  background-color: var(--color-brand);
+  color: var(--always-white);
+  border: none;
+  cursor: pointer;
+  font: var(--text-link);
+}
+
+#add-item:hover {
+  background-color: var(--color-brand-hover);
 }
