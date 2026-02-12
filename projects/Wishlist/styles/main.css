@@ -18,6 +18,7 @@ a {
 
 h2 {
   margin-top: 16px;
+  margin-bottom: 44px;
   font: var(--text-lg);
   color: var(--content-primary);
 }
@@ -27,19 +28,20 @@ h2 {
 ul {
   width: 100%;
   list-style: none;
+  margin-top: 40px;
+  margin-bottom: 36px;
 }
 
 .checkbox-list {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 36px;
   width: 100%;
 }
 
 .checkbox-list button {
   margin-left: auto;
-  /* Pushes button to the right */
   background: none;
   border: none;
   cursor: pointer;
@@ -50,11 +52,23 @@ ul {
   color: var(--content-secondary);
 }
 
-/* Checkbox specific styles if needed, or let them utilize browser defaults but reset potential conflicts */
 input[type="checkbox"] {
+  appearance: none; /* desabilita o estilo padrão do checkbox */
   width: 16px;
   height: 16px;
-  cursor: pointer;
+  cursor: pointer; /* habilita o cursorzinho ficar marcado quando o usuario passa o mouse em cima */
+  border: 1px solid var(--border-primary); /* cria uma borda nova */ 
+  border-radius: 35%; 
+  transition: all 0.2s; /* faz animação */
+}
+
+input[type="checkbox"]:checked { /* ativa quando o usuario clica na checkbox */ 
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+}
+
+.inputladecima {
+  width: 400px;
 }
 
 /* Aba de alerta INICIO */
@@ -63,7 +77,6 @@ input[type="checkbox"] {
   font-family: var(--font-family);
   background-color: var(--color-danger);
   color: var(--always-white);
-  margin-top: 36px;
   padding: 12px 0;
   border-radius: 12px;
 }
