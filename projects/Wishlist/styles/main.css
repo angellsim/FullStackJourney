@@ -53,21 +53,26 @@ ul {
 }
 
 input[type="checkbox"] {
-  appearance: none; /* desabilita o estilo padrão do checkbox */
+  appearance: none;
+  /* desabilita o estilo padrão do checkbox */
   width: 16px;
   height: 16px;
-  cursor: pointer; /* habilita o cursorzinho ficar marcado quando o usuario passa o mouse em cima */
-  border: 1px solid var(--border-primary); /* cria uma borda nova */ 
-  border-radius: 35%; 
-  transition: all 0.2s; /* faz animação */
+  cursor: pointer;
+  /* habilita o cursorzinho ficar marcado quando o usuario passa o mouse em cima */
+  border: 1px solid var(--border-primary);
+  /* cria uma borda nova */
+  border-radius: 35%;
+  transition: all 0.2s;
+  /* faz animação */
 }
 
-input[type="checkbox"]:checked { /* ativa quando o usuario clica na checkbox */ 
+input[type="checkbox"]:checked {
+  /* ativa quando o usuario clica na checkbox */
   background-color: var(--color-brand);
   border-color: var(--color-brand);
 }
 
-.inputladecima {
+#input-item {
   width: 400px;
 }
 
