@@ -1,0 +1,23 @@
+a {
+  background-color: #252525;
+  padding: 20px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
