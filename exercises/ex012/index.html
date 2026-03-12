@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegação horizontal</title>
+  <style>
+    .horizontal {
+      display: flex;
+      gap: 8px;
+      justify-content: space-around;
+      border: 1px solid red;
+    }
+
+    a {
+      border: 1px solid black;
+      margin: 20px;
+      padding: 20px 40px;
+    }
+
+    .caixa {
+      display: grid;
+      grid-auto-flow: column;
+      margin: 40px;
+      justify-content: space-around;
+    }
+
+    .caixa div {
+      background: red;
+      padding: 20px 40px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <header>
+    <div class="horizontal">
+      <a href="#">abc</a>
+      <a href="#">def</a>
+      <a href="#">hij</a>
+      <a href="#">klm</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="caixa">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </main>
+  
+</body>
+</html>
