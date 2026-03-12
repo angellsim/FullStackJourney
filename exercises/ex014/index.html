@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 1fr 80px;
+      height: 100vh;
+    }
+
+    .rodape {
+      grid-column: 1 / 3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <aside class="menu">
+      Menu lateral
+    </aside>
+
+    <main class="conteudo">
+      Conteúdo principal
+    </main>
+
+    <footer class="rodape">
+      Rodapé da página
+    </footer>
+
+  </div>
+
+</body>
+</html>
