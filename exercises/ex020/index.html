@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+
+  .topo, .rodape {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .container-principal {
+      display: flex;
+      flex: 1;
+  }
+
+  .menu-lateral {
+      background-color: #f4f4f4;
+      width: 250px;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+  }
+
+  .conteudo {
+      flex: 1;
+      padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+      .container-principal {
+          flex-direction: column;
+      }
+
+      .menu-lateral {
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid #ddd;
+      }
+  }
+  </style>
+</head>
+<body>
+  <header class="topo">
+    <h1>Topo do Site</h1>
+  </header>
+
+  <div class="container-principal">
+      <aside class="menu-lateral">
+          <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+          </ul>
+      </aside>
+
+      <main class="conteudo">
+          <h2>Conteúdo Principal</h2>
+          <p>Este é o corpo da página. No desktop, o menu fica ao lado. No celular, o menu sobe.</p>
+      </main>
+  </div>
+
+  <footer class="rodape">
+      <p>Rodapé @ 2026</p>
+  </footer>
+</body>
+</html>
