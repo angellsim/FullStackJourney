@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;     
+  }
+
+  .item-galeria {
+    flex: 1 1 calc(25% - 15px); 
+  }
+
+  .item-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 992px) {
+    .item-galeria {
+        flex: 1 1 calc(50% - 15px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .item-galeria {
+        flex: 1 1 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <section class="galeria">
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 1"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 2"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 3"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 4"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 5"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 6"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 7"></div>
+    <div class="item-galeria"><img src="https://via.placeholder.com/300" alt="Imagem 8"></div>
+  </section>
+</body>
+</html>
