@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título</title>
+
+
+
+  <style>
+    * {
+      background-color: #0251ac;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+
+
+
+</head>
+<body>
+
+
+
+  <center>
+    <p>Conteúdo</p>
+    <img src="chapell9.jpg" alt="chapell">
+  </center>
+
+  <div id="contador"></div>
+
+  <script>
+    const container = document.getElementById('contador')
+    for (let i = 0; i <= 100; i++){
+      const numero = document.createElement('span')
+      numero.textContent = i + ' '
+      container.appendChild(numero)
+    }
+  </script>
+
+
+
+</body>
+</html>
